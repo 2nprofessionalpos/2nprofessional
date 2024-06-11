@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | 2N + Professional</title>
+    <link href="Assets/css/ionicons/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/normalize.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="../Assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../Assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../Assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../Assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../Assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../Assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../Assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../Assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../Assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../Assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- Main -->
+    <div class="container container--login d-flex justify-content-center align-items-center ">
+        <section class="section-banner">
+            <img src="Assets/img/login_bg.jpg" alt="Imagen de fondo login" class="section__background">    
+        </section>
+        <section class="section-form d-flex justify-content-center align-items-center flex-column ">
+            <header class="header">
+                <img src="Assets/img/logo.png" alt="Logo Titan del Oriente" class="header__logo">
+            </header>
+            <form method="post" action="./Services/session/IniciarSesion.php" class="form">
+                <div class="form__input">
+                    <input type="text" name="username" id="username" placeholder="Usuario" class="input__user" autocomplete="off">
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+                <div class="form__input">
+                    <input type="password" name="password" id="password" placeholder="Contraseña" class="input__password" autocomplete="off">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+                <div class="content--btn d-flex justify-content-center">
+                    <button type="submit" class="form__button" id="login" name="login">
+                        <span class="button__text">Ingresar</span>
+                        <ion-icon class="button__icon" name="log-in-outline"></ion-icon>
+                    </button>
+                </div>
+            </form>
+            
+            <!--Footer-->
+            <footer class="footer">
+                <img src="Assets/img/logo_secondary.jpg" class="footer__img--login" alt="Logo de 2N + Professional">
+            </footer>
+        </section>
+    </div>
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="Assets/js/ionicons/ionicons.esm.js" type="module"></script>
+    <script nomodule src="Assets/js/ionicons/ionicons.js"></script>
+</body>
+</html>
